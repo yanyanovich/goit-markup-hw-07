@@ -1,4 +1,5 @@
 @import "normalize.scss";
+@import "basic.scss";
 @import "./utils/variables.scss";
 @import "./components/header";
 @import "./components/hero";
@@ -8,43 +9,3 @@
 @import "./components/team";
 @import "./components/portfolio";
 @import "./components/footer";
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--primary-text-color);
-  background-color: var(--bacground-color);
-}
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
-li {
-  list-style: none;
-}
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.section {
-  padding: 94px 0;
-}
