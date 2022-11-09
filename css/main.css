@@ -239,4 +239,181 @@ Add the correct display in Chrome and Safari.
 */
 summary {
   display: list-item;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #000000;
+}
+.header__logo span {
+  color: #2196f3;
+}
+.header__information {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__mail {
+  margin-right: 50px;
+}
+.header__mail a, .header__phone a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px 0;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+  -webkit-transition: color, fill;
+  transition: color, fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__mail a:hover, .header__mail a:focus, .header__phone a:hover, .header__phone a:focus {
+  color: #2196f3;
+  fill: currentColor;
+}
+.header__mail a span, .header__phone a span {
+  margin-right: 10px;
+}
+.header__mail a span:hover, .header__mail a span:focus, .header__phone a span:hover, .header__phone a span:focus {
+  fill: currentColor;
+}
+
+.navigation__menu {
+  padding-left: 0;
+  margin-left: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+.navigation__item.current .navigation__link {
+  color: #2196f3;
+}
+.navigation__item.current .navigation__link::after {
+  content: "";
+  position: absolute;
+  opacity: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  -webkit-transition: background-color;
+  transition: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation__link {
+  display: block;
+  padding: 32px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: #212121;
+  -webkit-transition: color;
+  transition: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+.navigation__link::after {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  -webkit-transition: opacity;
+  transition: opacity;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation__link:hover:after {
+  opacity: 1;
+}
+.navigation__link:hover, .navigation__link:focus {
+  color: #2196f3;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary-text-color);
+  background-color: var(--bacground-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding: 94px 0;
 }/*# sourceMappingURL=main.css.map */
