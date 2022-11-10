@@ -7,7 +7,7 @@
     gap: 30px;
   }
   &__item {
-    flex-basis: calc((100%-30px) / 4);
+    // flex-basis: calc((100%-30px) / 4);
     &::before {
       content: " ";
       display: block;
