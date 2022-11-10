@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -21,11 +21,15 @@
           <a class="header__logo" href="#"><span>Web</span>Studio</a>
           <nav class="navigation">
             <ul class="navigation__menu">
-              <li class="navigation__item current"><a href="#" class="navigation__link">Студія</a></li>
               <li class="navigation__item">
-                <a href="./portfolio.html" class="navigation__link">Портфоліо</a>
+                <a href="/" class="navigation__link">Студія</a>
               </li>
-              <li class="navigation__item"><a href="#" class="navigation__link">Контакти</a></li>
+              <li class="navigation__item current">
+                <a href="##" class="navigation__link">Портфоліо</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Контакти</a>
+              </li>
             </ul>
           </nav>
           <ul class="header__information">
@@ -54,7 +58,7 @@
       </div>
     </header>
     <main>
-      <section class="section portfolio">
+      <section class="portfolio section">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="portfolio__tabs">
@@ -74,7 +78,7 @@
               <button type="button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="portfolio__items">
+          <ul class="portfolio__list">
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__image-box">
@@ -97,7 +101,8 @@
               </a>
             </li>
             <li class="portfolio__item">
-              <a href="#" class="portfolio__image-box">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__image-box">
                   <img
                     src="./images/neworlean.jpg"
                     alt="Постер New Orlean vs Golden Star"
@@ -330,12 +335,16 @@
             <p class="footer__email-title">Підпишіться на розсилку</p>
             <form name="footer__contact-form" autocomplete="off">
               <div class="footer__form-input">
-                <input class="footer__input-email" type="email" placeholder="E-mail">
+                <input
+                  class="footer__input-email"
+                  type="email"
+                  placeholder="E-mail"
+                />
                 <button class="footer__form-button" type="submit">
-                    Підписатися
-                    <svg width="24" height="24">
-                      <use href="./images/icons.svg#icon-send"></use>
-                    </svg>
+                  Підписатися
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
                 </button>
               </div>
             </form>
